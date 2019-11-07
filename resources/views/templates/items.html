@@ -6,7 +6,7 @@
         <div class="pull-right" style="padding-top:30px">
             <div class="box-tools" style="display:inline-table">
               <div class="input-group">
-                  <input type="text" class="form-control input-sm ng-valid ng-dirty" placeholder="Pesquisar" ng-change="searchDB()" ng-model="searchText" name="table_search" title="" tooltip="" data-original-title="Min character length is 3">
+                  <input type="text" class="form-control input-sm ng-valid ng-dirty" placeholder="Pesquisar" ng-change="searchDB()" ng-model="searchText" name="table_search" title="" tooltip="" data-original-title="Min character length is 1">
                   <span class="input-group-addon">Pesquisar</span>
               </div>
             </div>
@@ -46,27 +46,27 @@
             <form method="POST" name="addItem" role="form" ng-submit="saveAdd()">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Create Item</h4>
+                <h4 class="modal-title" id="myModalLabel">Criar Novo</h4>
             </div>
             <div class="modal-body">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-6">
-                            <strong>Title : </strong>
+                            <strong>Título: </strong>
                             <div class="form-group">
                                 <input ng-model="form.title" type="text" placeholder="Name" name="title" class="form-control" required />
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6">
-                            <strong>Description : </strong>
+                            <strong>Descrição : </strong>
                             <div class="form-group" >
                                 <textarea ng-model="form.description" class="form-control" required>
                                 </textarea>
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="submit" ng-disabled="addItem.$invalid" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    <button type="submit" ng-disabled="addItem.$invalid" class="btn btn-primary">Submeter</button>
                 </div>
             </div>
             </form>
@@ -83,7 +83,7 @@
                 <input ng-model="form.id" type="hidden" placeholder="Name" name="name" class="form-control" />
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Edit Item</h4>
+                <h4 class="modal-title" id="myModalLabel">Editar Item</h4>
             </div>
             <div class="modal-body">
                 <div class="container">
@@ -100,8 +100,8 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="submit" ng-disabled="editItem.$invalid" class="btn btn-primary create-crud">Submit</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    <button type="submit" ng-disabled="editItem.$invalid" class="btn btn-primary create-crud">Submeter</button>
                 </div>
             </div>
             </form>

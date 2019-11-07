@@ -31,7 +31,7 @@ app.controller('ItemController', function(dataFactory,$scope,$http){
   }
 
   $scope.searchDB = function(){
-      if($scope.searchText.length >= 3){
+      if($scope.searchText.length >= 1){
           if($.isEmptyObject($scope.libraryTemp)){
               $scope.libraryTemp = $scope.data;
               $scope.totalItemsTemp = $scope.totalItems;
